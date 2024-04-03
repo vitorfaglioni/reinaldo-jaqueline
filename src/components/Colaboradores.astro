@@ -1,0 +1,54 @@
+<div class="columns">
+	<div class="column">
+		<textarea id="inputText">testepik</textarea>
+		<button id="button">submit</button>
+	</div>
+
+	<div class="column">
+		<textarea id="resultText">testebct</textarea>
+	</div>
+</div>
+
+<script>
+	let button = document.querySelector('button');
+	if (button) {
+		button.addEventListener ('click', () => {
+			try {
+				let input = document.getElementById("inputText") as HTMLInputElement;
+				let result = document.getElementById("resultText") as HTMLInputElement;
+				let finalText = '';
+				if (input && result) { 
+					let textArray = input.value.split('\n');
+					textArray?.forEach((line) => {
+						finalText += line + ' | ';
+					})
+					result.value = finalText;
+				}
+				// Do something with the data
+			} catch (error) {
+				if (error instanceof Error) {
+				console.error(error.message);
+				}
+			}
+		})
+	}
+	function treatedText(input: string) {
+		return input;
+	}
+
+
+</script>
+
+<style>
+	.columns {
+		height: 40em;
+		display: grid;
+		gap: 8px;
+		grid-template-columns: repeat(auto-fill, minmax(36%, 1fr));
+	}
+	.columns .column textarea {
+		height: 100%;
+		resize: none;
+	}
+
+</style>
