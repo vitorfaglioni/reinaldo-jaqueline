@@ -17,10 +17,18 @@
 				let input = document.getElementById("inputText") as HTMLInputElement;
 				let result = document.getElementById("resultText") as HTMLInputElement;
 				let finalText = '';
+				let count = 1;
 				if (input && result) { 
 					let textArray = input.value.split('\n');
+					let length = textArray.length;
 					textArray?.forEach((line) => {
-						finalText += line + ' | ';
+						if (count < length) {
+							finalText += line + ' | ';
+							count++;
+						}
+						else {
+							finalText += line;
+						}
 					})
 					result.value = finalText;
 				}
