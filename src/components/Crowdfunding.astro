@@ -15,7 +15,7 @@ import CrowdfundingGoal from './CrowdfundingGoal.astro';
 		
 		<p><blockquote><strong>Ou seja:</strong> você pode colaborar com moeda nacional ou estrangeira!</blockquote></p>
 
-		<p>O plano funciona com <strong>metas coletivas</strong> para a produção de <strong>conteúdos extras</strong>, e <strong>recompensas individuais</strong> para os colaboradores.</p>
+		<p>Temos atualmente <strong>três metas</strong>abertas para garantir a <strong>frequência</strong> da produção de episódios.</p>
 
 		<p>Funciona assim: <strong>um valor é arrecadado ao longo de um mês</strong> de referência, e aí acontece uma <strong>prestação de contas no primeiro programa do mês posterior</strong> para avaliarmos quais metas foram batidas, e portanto, <strong>quais conteúdos extras serão produzidos</strong> naquele mês.</p>
 		
@@ -36,15 +36,21 @@ import CrowdfundingGoal from './CrowdfundingGoal.astro';
 
 		<p><br/></p>
 		<CrowdfundingGoal 
-			name="Testostirinhas Show" 
-			amount="500" 
-			description="Cumprindo essa meta, temos Testostirinhas Show encerrando todos os programas do mês!" 
+			name="Programa mensal" 
+			amount="1.500" 
+			description="Cumprindo essa meta, teremos um Rabisco Falado garantido todo mês!" 
 		/>
 
 		<CrowdfundingGoal 
-			name="Intervalo Extra" 
-			amount="2.000" 
-			description="Garante a produção de um programa extra no mês - no estilo intervalo (ou seja, com um tema livre, geralmente não-ligado ao futebol)!"
+			name="Dois programas mensais" 
+			amount="3.000" 
+			description="Garante a produção de dois episódios por mês!"
+		/>
+
+		<CrowdfundingGoal 
+			name="Programa semanal" 
+			amount="5.500" 
+			description="Garante a frequência semanal do Rabisco Falado!"
 		/>
 
 		<p>
@@ -59,54 +65,12 @@ import CrowdfundingGoal from './CrowdfundingGoal.astro';
 		<h3>Conheça as recompensas individuais!</h3>
 
 		<p><br/></p>
-
-		<CrowdfundingGoal 
-			name="Só quero ajudar" 
-			isReward="true" 
-			amount="1" 
-			description="Colaboração simbólica, recebe como recompensa a nossa gradião por nos ajudarem a bater as metas!" 
-		/>
 	
 		<CrowdfundingGoal 
-			name="Torcedor" 
-			isReward="true" 
-			amount="5" 
-			description="Seu nome eternizado na publicação de todos episódios do período em que contribuiu!" 
-		/>
-	
-		<CrowdfundingGoal 
-			name="Reserva" 
+			name="Nome nos créditos" 
 			isReward="true" 
 			amount="10" 
-			description="Você receberá um abraço nominal gravado ao final do programa no bloco destinado aos colaboradores do financiamento coletivo, além da recompensa anterior!" 
-		/>
-
-		<CrowdfundingGoal 
-			name="Perna de pau" 
-			isReward="true" 
-			amount="20" 
-			description="Seu nome eternizado na publicação dos vídeos que produzirmos como conteúdo extra, além de todas as recompensas anteriores!" 
-		/>
-
-		<CrowdfundingGoal 
-			name="Alegria nas pernas" 
-			isReward="true" 
-			amount="50" 
-			description="Você pode nos enviar um 'comentrouxa gravado' de até trinta segundos pra gente tocar no programa e te responder, além de todas as recompensas anteriores!" 
-		/>
-
-		<CrowdfundingGoal 
-			name="Craque" 
-			isReward="true" 
-			amount="100" 
-			description="Você pode nos enviar um 'comentrouxa gravado' de até um minuto, além de todas as recompensas anteriores!" 
-		/>
-
-		<CrowdfundingGoal 
-			name="Cris Cris" 
-			isReward="true" 
-			amount="200" 
-			description="Você pode participar da gravação de um bloco do programa com a gente, além de todas as recompensas anteriores!" 
+			description="Seu nome aparecerá nos créditos dos programas durante os meses em que você colaborar!" 
 		/>
 
 		<p>
@@ -131,7 +95,7 @@ import CrowdfundingGoal from './CrowdfundingGoal.astro';
 </div>
 <style>
 	div {
-		background-color: var(--branco-azulado);
+		background-color: var(--preto);
 	}
 
 	main {
@@ -140,32 +104,32 @@ import CrowdfundingGoal from './CrowdfundingGoal.astro';
 
 	h1 {
 		text-align: center;
-		color: var(--laranja-claro);
+		color: var(--cinza-mais-claro);
 		margin: auto;
 	}
 
 	h2 {
 		text-align: center;
-		color: var(--azul-claro);
+		color: var(--branco);
 		margin: 1em auto;
 	}
 
 	h3 {
-		color: var(--azul-escuro);
+		color: var(--cinza-claro);
 	}
 	
 	h4 {
-		color: var(--laranja-escuro);
+		color: var(--cinza-mais-claro);
 	}
 
 	p {
-		color: var(--azul-medio);
+		color: var(--branco);
 		text-align: center;
 		margin: 1em auto 0;
 	}
 
 	.icons {
-		color: var(--laranja-claro);
+		color: var(--cinza-claro);
 		display: flex;
 		flex-wrap: wrap;
 		justify-content: center;
