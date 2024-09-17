@@ -1,12 +1,12 @@
 ---
-const { playerName, id, bluesky, twitter, instagram, description } = Astro.props;
+const { starName, id, bluesky, twitter, instagram, description } = Astro.props;
 ---
-<div class="player">
-    <div class="playerName">
-        <h4 >{playerName}</h4>
+<div class="star">
+    <div class="starName">
+        <h4 >{starName}</h4>
     </div>
     <div class="image">
-        <img class="photo" src={'/players/' + id + '.png'} />
+        <img class="photo" src={'/stars/' + id + '.png'} />
     </div>
     <div class="icons">
         <a href={'https://bsky.app/profile/' + bluesky} target="_blank">
@@ -33,7 +33,7 @@ const { playerName, id, bluesky, twitter, instagram, description } = Astro.props
 
 
 <style>
-    .playerName {
+    .starName {
         min-height: 4.2em;
         display: flex;
         align-items: center;
@@ -48,12 +48,12 @@ const { playerName, id, bluesky, twitter, instagram, description } = Astro.props
         filter: drop-shadow(0px 3px 0px var(--azul-escuro)) drop-shadow(0px -1px 0px var(--azul-escuro));
     }
 
-    .player .image {
+    .star .image {
         text-align: center;
         margin: auto 1em;
     }
 
-    .player .image .photo {
+    .star .image .photo {
         border-radius: 100%;
         filter: drop-shadow(3px 0px 0px var(--amarelo))
             drop-shadow(-3px 0px 0px var(--amarelo))
@@ -62,7 +62,7 @@ const { playerName, id, bluesky, twitter, instagram, description } = Astro.props
     }
     
    
-    .player .icons {
+    .star .icons {
 		color: var(--amarelo);
 		display: flex;
 		flex-wrap: wrap;
@@ -74,18 +74,18 @@ const { playerName, id, bluesky, twitter, instagram, description } = Astro.props
         filter: drop-shadow(0px 4px 0px var(--azul-escuro));
 	}
 
-    .player .icons svg {
+    .star .icons svg {
 		display: flex;
         margin: 0.4em auto;
 
     }
 
-	.player .icons a {
+	.star .icons a {
 		color: var(--amarelo);
 		text-decoration: none;
 	}
 
-	.player .icons a:hover {
+	.star .icons a:hover {
 		color: var(--laranja-escuro);
 	}
 
