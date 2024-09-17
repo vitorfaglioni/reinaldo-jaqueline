@@ -127,8 +127,8 @@ pre > code {
 }
 
 blockquote {
-	color: var(--cinza-claro);
-	border-left: 4px solid var(--cinza-claro);
+	color: var(--cinza-mais-claro);
+	border-left: 4px solid var(--cinza-mais-escuro);
 	padding: 0 0 0 20px;
 	margin: 0px;
 	font-size: 1.333em;
