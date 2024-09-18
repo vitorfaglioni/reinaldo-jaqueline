@@ -18,6 +18,7 @@
     "typescript": "^5.4.3"
   },
   "devDependencies": {
+    "@types/jquery": "^3.5.30",
     "astro": "^4.15.5"
   }
 }
