@@ -46,7 +46,7 @@ const { starName, id, bluesky, twitter, instagram, description } = Astro.props;
     h4 {
         color: var(--amarelo);
         margin: 0;
-        filter: drop-shadow(0px 4px 0px var(--cinza-escuro)) drop-shadow(0px -1px 0px var(--cinza-escuro));
+        filter: drop-shadow(0px 4px 0px var(--cinza-mais-escuro)) drop-shadow(0px -1px 0px var(--cinza-mais-escuro));
     }
 
     .star .image {
@@ -71,7 +71,6 @@ const { starName, id, bluesky, twitter, instagram, description } = Astro.props;
 		gap: 1em;
 		margin: 0 auto;
         border-radius: 0.5em;
-        filter: drop-shadow(0px 3px 0px var(--cinza-escuro)) drop-shadow(0px 2px 0px var(--preto));
 	}
 
     .star .icons svg {
@@ -84,9 +83,13 @@ const { starName, id, bluesky, twitter, instagram, description } = Astro.props;
 		color: var(--amarelo);
 		text-decoration: none;
 	}
+    
+	.star .icons a svg {
+        filter: drop-shadow(0px 3px 0px var(--cinza-escuro)) drop-shadow(0px 2px 0px var(--preto));
+	}
 
 	.star .icons a:hover {
-		color: var(--branco);
+		color: var(--amarelo-claro);
 	}
 
     .description {

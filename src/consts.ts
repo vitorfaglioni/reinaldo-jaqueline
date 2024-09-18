@@ -2,4 +2,4 @@
 // You can import this data from anywhere in your site by using the `import` keyword.
 
 export const SITE_TITLE = 'Rabisco Falado';
-export const SITE_DESCRIPTION = 'Alegria, ilustração e desespero';
+export const SITE_DESCRIPTION = 'Somos muito fãs de orelhas.';
