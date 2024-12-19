@@ -2,7 +2,7 @@
 const { starName, id, bluesky, twitter, instagram, description } = Astro.props;
 ---
 <div class="star">
-    <div class="starName">
+    <div class="name">
         <h4>{starName}</h4>
     </div>
     <div class="image">
@@ -15,13 +15,12 @@ const { starName, id, bluesky, twitter, instagram, description } = Astro.props;
                 <path fill="currentColor" d="M12 10.8c-1.087-2.114-4.046-6.053-6.798-7.995C2.566.944 1.561 1.266.902 1.565C.139 1.908 0 3.08 0 3.768c0 .69.378 5.65.624 6.479c.815 2.736 3.713 3.66 6.383 3.364q.204-.03.415-.056q-.207.033-.415.056c-3.912.58-7.387 2.005-2.83 7.078c5.013 5.19 6.87-1.113 7.823-4.308c.953 3.195 2.05 9.271 7.733 4.308c4.267-4.308 1.172-6.498-2.74-7.078a9 9 0 0 1-.415-.056q.21.026.415.056c2.67.297 5.568-.628 6.383-3.364c.246-.828.624-5.79.624-6.478c0-.69-.139-1.861-.902-2.206c-.659-.298-1.664-.62-4.3 1.24C16.046 4.748 13.087 8.687 12 10.8"/>
             </svg>
         </a>
-        <!--
         <a href={'https://twitter.com/' + twitter} target="_blank">
             <span class="sr-only">Twitter</span>
             <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 24 24">
                 <path fill="currentColor" d="M21.543 7.104c.015.211.015.423.015.636c0 6.507-4.954 14.01-14.01 14.01v-.003A13.94 13.94 0 0 1 0 19.539a9.88 9.88 0 0 0 7.287-2.041a4.93 4.93 0 0 1-4.6-3.42a4.916 4.916 0 0 0 2.223-.084A4.926 4.926 0 0 1 .96 9.167v-.062a4.887 4.887 0 0 0 2.235.616A4.928 4.928 0 0 1 1.67 3.148a13.98 13.98 0 0 0 10.15 5.144a4.929 4.929 0 0 1 8.39-4.49a9.868 9.868 0 0 0 3.128-1.196a4.941 4.941 0 0 1-2.165 2.724A9.828 9.828 0 0 0 24 4.555a10.019 10.019 0 0 1-2.457 2.549"/>
             </svg>
-        </a> -->
+        </a>
         <a href={'https://instagram.com/' + instagram} target="_blank">
             <span class="sr-only">Instagram</span>
             <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 24 24">
@@ -31,74 +30,3 @@ const { starName, id, bluesky, twitter, instagram, description } = Astro.props;
     </div>
     <div class="description"><p>{description}</p></div>
 </div>
-
-
-<style>
-    .starName {
-        min-height: 4.2em;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        border-radius: 0.5em;
-        margin: 0 auto 0.2em;
-    }
-
-    h4 {
-        color: var(--amarelo);
-        margin: 0;
-        filter: drop-shadow(0px 4px 0px var(--cinza-6)) drop-shadow(0px -1px 0px var(--cinza-4));
-    }
-
-    .star .image {
-        text-align: center;
-        margin: auto 1em;
-    }
-
-    .star .image .photo {
-        border-radius: 100%;
-        filter: drop-shadow(3px 0px 0px var(--branco))
-            drop-shadow(-3px 0px 0px var(--cinza-2))
-            drop-shadow(0px 5px 0px var(--cinza-4)) 
-            drop-shadow(0px -5px 0px var(--cinza-6));
-    }
-    
-   
-    .star .icons {
-		display: flex;
-		flex-wrap: wrap;
-        align-items: center;
-        justify-content: center;
-		gap: 1em;
-		margin: 0 auto;
-        border-radius: 0.5em;
-	}
-
-    .star .icons svg {
-		display: flex;
-        margin: 0.4em auto;
-
-    }
-
-	.star .icons a {
-		color: var(--amarelo);
-		text-decoration: none;
-	}
-    
-	.star .icons a svg {
-        filter: drop-shadow(0px 3px 0px var(--cinza-6)) drop-shadow(0px 2px 0px var(--cinza-4));
-	}
-
-	.star .icons a:hover {
-		color: var(--amarelo-claro);
-	}
-
-    .description {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
-
-    .description p {        
-        margin: 0.4em 0.4em;
-    }
-</style>

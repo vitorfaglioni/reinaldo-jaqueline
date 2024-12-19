@@ -1,4 +1,4 @@
-name: Deploy Rabisco Falado to Github Pages
+name: Deploy Reinaldo Jaqueline to Github Pages
 
 on:
   # Trigger the workflow every time you push to the `main` branch

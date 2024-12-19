@@ -2,11 +2,11 @@
 import HeaderLink from './HeaderLink.astro';
 ---
 
-<header>
+<header class="dark-section">
 	<nav>
 		<div class="internal-links">
-			<HeaderLink href="#About">Sobre</HeaderLink>
-			<HeaderLink href="#Crowdfunding">Apoie</HeaderLink>
+			<HeaderLink href="#Listen">Ouça o piloto!</HeaderLink>
+			<HeaderLink href="#About">Sobre o podcast</HeaderLink>
 		</div>
 	</nav>
 </header>
@@ -31,12 +31,8 @@ import HeaderLink from './HeaderLink.astro';
 	}
 	nav a {
 		padding: 1em 0.5em;
-		color: var(--branco);
 		border-bottom: 4px solid transparent;
 		font-weight: bold;
-	}
-	nav a:hover {
-		color: var(--cinza-5);
 	}
 	.social-links,
 	.social-links a {

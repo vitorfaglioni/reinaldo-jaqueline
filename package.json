@@ -1,5 +1,5 @@
 {
-  "name": "rabisco-falado",
+  "name": "reinaldo-jaqueline",
   "type": "module",
   "version": "0.0.1",
   "scripts": {
@@ -14,8 +14,7 @@
     "@astrojs/mdx": "^2.2.2",
     "@astrojs/rss": "^4.0.5",
     "@astrojs/sitemap": "^3.1.2",
-    "@fontsource/atkinson-hyperlegible": "^5.0.19",
-    "@fontsource/cabin-sketch": "^5.1.0",
+    "@fontsource/cambo": "^5.1.1",
     "typescript": "^5.4.3"
   },
   "devDependencies": {
