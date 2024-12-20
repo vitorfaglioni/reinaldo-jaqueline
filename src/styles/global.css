@@ -144,6 +144,27 @@ footer {
 	}
 }
 
+.from-dark-to-light {
+	text-align: center;
+	margin: 0 auto;
+	background: linear-gradient(var(--azul-escuro-fundo) 15%, var(--azul-medio-fundo) 50%, var(--azul-claro-fundo) 85%);
+}
+
+.from-dark-to-light main {
+	padding: 3em;
+}
+
+.from-light-to-dark {
+	text-align: center;
+	margin: 0 auto;
+	background: linear-gradient(var(--azul-claro-fundo) 15%, var(--azul-medio-fundo) 50%, var(--azul-escuro-fundo) 85%);
+}
+
+
+.from-light-to-dark main {
+	padding: 3em;
+}
+
 .sr-only {
 	border: 0;
 	padding: 0;
