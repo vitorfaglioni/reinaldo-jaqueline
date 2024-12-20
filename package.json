@@ -14,7 +14,7 @@
     "@astrojs/mdx": "^2.2.2",
     "@astrojs/rss": "^4.0.5",
     "@astrojs/sitemap": "^3.1.2",
-    "@fontsource/cambo": "^5.1.1",
+    "@fontsource-variable/lexend": "^5.1.1",
     "typescript": "^5.4.3"
   },
   "devDependencies": {

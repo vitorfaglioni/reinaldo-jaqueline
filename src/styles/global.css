@@ -17,7 +17,7 @@
 }
 
 body {
-	font-family: 'Cambo', serif;
+	font-family: 'Lexend Variable', sans-serif;
 	margin: 0;
 	padding: 0;
 	text-align: left;
@@ -69,14 +69,6 @@ h4 {
 
 h5 {
 	font-size: 1.25em;
-}
-
-a {
-	color: var(--amarelo-jaqueline);
-}
-
-a:hover {
-	color: var(--vermelho-jaqueline);
 }
 
 strong,
@@ -176,6 +168,13 @@ footer {
 	color: var(--azul-escuro-fundo);
 }
 
+.light-section a {
+	color: var(--vermelho-jaqueline);
+}
+
+.light-section a:hover {
+	color: var(--amarelo-jaqueline);
+}
 
 .icons a svg {
 	filter: drop-shadow(0px 3px 0px var(--cinza-6)) drop-shadow(0px 2px 0px var(--cinza-4));
@@ -188,6 +187,14 @@ footer {
 .dark-section {
 	background-color: var(--azul-escuro-fundo);
 	color: var(--azul-claro-fundo);
+}
+
+.dark-section a {
+	color: var(--amarelo-jaqueline);
+}
+
+.dark-section a:hover {
+	color: var(--vermelho-jaqueline);
 }
 
 .podcast-player {
@@ -220,7 +227,6 @@ footer {
 
 
 .star .name {
-	color: var(--amarelo-jaqueline);
 	min-height: 4.2em;
 	display: flex;
 	align-items: center;
@@ -248,7 +254,7 @@ footer {
 	flex-wrap: wrap;
 	align-items: center;
 	justify-content: center;
-	gap: 1em;
+	gap: 0;
 	margin: 0 auto;
 	border-radius: 0.5em;
 }
@@ -260,16 +266,11 @@ footer {
 }
 
 .star .icons a {
-	color: var(--amarelo-jaqueline);
 	text-decoration: none;
 }
 
 .star .icons a svg {
-	filter: drop-shadow(0px 3px 0px var(--cinza-6)) drop-shadow(0px 2px 0px var(--cinza-4));
-}
-
-.star .icons a:hover {
-	color: var(--vermelho-jaqueline);
+	filter: drop-shadow(0px 3px 0px var(--azul-medio-fundo)) drop-shadow(0px 2px 0px var(--azul-claro-reinaldo));
 }
 
 .star .description {
