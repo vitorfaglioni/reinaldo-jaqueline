@@ -183,6 +183,22 @@ footer {
 	white-space: nowrap;
 }
 
+.dark-section {
+	background-color: var(--azul-escuro-fundo);
+	color: var(--azul-claro-fundo);
+}
+
+.dark-section a {
+	color: var(--amarelo-jaqueline);
+}
+
+.dark-section a:hover {
+	color: var(--vermelho-jaqueline);
+}
+
+.dark-section .icons {
+	color: var(--amarelo-jaqueline);
+}
 
 .light-section {
 	background-color: var(--azul-claro-fundo);
@@ -197,24 +213,7 @@ footer {
 	color: var(--amarelo-jaqueline);
 }
 
-.icons a svg {
-	filter: drop-shadow(0px 3px 0px var(--cinza-6)) drop-shadow(0px 2px 0px var(--cinza-4));
-}
-
-.icons a:hover {
-	color: var(--amarelo-claro);
-}
-
-.dark-section {
-	background-color: var(--azul-escuro-fundo);
-	color: var(--azul-claro-fundo);
-}
-
-.dark-section a {
-	color: var(--amarelo-jaqueline);
-}
-
-.dark-section a:hover {
+.light-section .icons {
 	color: var(--vermelho-jaqueline);
 }
 
@@ -229,7 +228,6 @@ footer {
 }
 
 .icons {
-	color: var(--amarelo-jaqueline);
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: center;
@@ -246,6 +244,55 @@ footer {
 	filter: drop-shadow(0px 3px 0px var(--azul-medio-fundo)) drop-shadow(0px 2px 0px var(--rosa-reinaldo));
 }
 
+.icons a:hover {
+	color: var(--amarelo-claro);
+}
+
+.podcasts {
+	display: grid;
+	gap: 8px;
+	grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+}
+
+.podcast {
+	margin: 1em auto;
+}
+
+.podcast-name {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border-radius: 0.5em;
+	margin: 0 auto 0.2em;
+}
+
+.podcast-name p {
+	margin: 0;
+	color: var(--dirty-white);
+	filter: drop-shadow(0px 4px 0px var(--russian-violet)) 
+		drop-shadow(0px 2px 0px var(--russian-violet-light))
+		drop-shadow(1px 0px 0px var(--russian-violet)) 
+		drop-shadow(1px 0px 0px var(--russian-violet-light))
+		drop-shadow(0px 0px 1px var(--russian-violet)) 
+		drop-shadow(0px 0px 1px var(--russian-violet-light))
+		drop-shadow(0px 0px 0px var(--russian-violet)) 
+		drop-shadow(0px 0px 0px var(--russian-violet-light));
+}
+
+.podcast .podcast-image {
+	text-align: center;
+	margin: auto 1em;
+}
+
+.podcast-description {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.podcast-description p {        
+	margin: 0.4em 0.4em;
+}
 
 .star .name {
 	min-height: 4.2em;

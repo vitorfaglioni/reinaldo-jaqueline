@@ -1,0 +1,9 @@
+---
+const { title, id, url } = Astro.props;
+---
+<div class="podcast">
+    <div class="podcast-image">
+        <a href={url} target="_blank"><img src={'/podcasts/' + id + '.png'} /></a>
+    </div>
+    <div class="podcast-name"><p>{title}</p></div>
+</div>
