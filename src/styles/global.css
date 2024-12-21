@@ -299,6 +299,18 @@ footer {
 	margin: 0 auto 0.2em;
 }
 
+.social-links {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	gap: 1em;
+	margin: 1em auto 0;
+}
+
+.social-links a {
+	text-decoration: none;
+}
+
 .star .image {
 	text-align: center;
 	margin: auto 1em;
