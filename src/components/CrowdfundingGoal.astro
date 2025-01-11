@@ -2,8 +2,8 @@
 const { name, amount, description, isReward } = Astro.props;
 ---
 <h4>{name}</h4>
-{isReward && <p><strong>A partir de:</strong></p>}
-<h1>R$ {amount},00</h1>
+{isReward && <p>A partir de:</p>}
+<h2>R$ {amount},00</h2>
 <p>{description}</p>
 
 <p><br/></p>

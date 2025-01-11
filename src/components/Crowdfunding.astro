@@ -3,25 +3,19 @@ import CrowdfundingPlatforms from './CrowdfundingPlatforms.astro';
 import CrowdfundingGoal from './CrowdfundingGoal.astro';
 ---
 
-<div id="Crowdfunding">
+<div id="Crowdfunding" class="light-section">
 	<main>
 		<h1>Você pode nos ajudar!</h1>
+		
+		<br/>
 
-		<h2>Aceitamos PIX e estamos em duas plataformas de financiamento coletivo recorrente mensal.</h2>
+		<h3>Contribua com o nosso financiamento coletivo.</h3>
+
+		<br/>
 
 		<CrowdfundingPlatforms />
-
-		<p>O <strong>Apoia.se</strong> é uma plataforma nacional, enquanto o <strong>Patreon</strong> é internacional.</p>
 		
-		<p><blockquote><strong>Ou seja:</strong> você pode colaborar com moeda nacional ou estrangeira!</blockquote></p>
-
-		<p>Funciona assim: <strong>um valor é arrecadado ao longo de um mês</strong> de referência, e aí acontece uma <strong>prestação de contas nos murais do Apoia.se e do Patreon no início do mês posterior</strong> para sabermos quantos programas teremos naquele mês.</p>
-		
-		<p><blockquote><i>Por exemplo: em <strong>Agosto</strong> produziremos considerando todas as arrecadações realizadas em <strong>Julho</strong>.</i></blockquote></p>
-		
-		<p>Temos atualmente <strong>três metas</strong> abertas para garantir a <strong>frequência</strong> da produção de episódios.</p>
-
-		<p><br/></p>
+		<br/> 
 
 		<p>
 			<div class="icons">
@@ -30,26 +24,26 @@ import CrowdfundingGoal from './CrowdfundingGoal.astro';
 			</div>
 		</p>
 
-		<h3>Conheça as nossas metas mensais!</h3>
+		<h3>Metas!</h3>
 
-		<p><br/></p>
+		<br/>
 
 		<CrowdfundingGoal 
-			name="Programa mensal" 
-			amount="1.500" 
-			description="Cumprindo essa meta, teremos um Rabisco Falado garantido todo mês!" 
+			name="Episódios quinzenais" 
+			amount="2.000" 
+			description="Atingindo, poderemos manter o podcast no ar com episódios quinzenais." 
 		/>
 
 		<CrowdfundingGoal 
-			name="Dois programas mensais" 
+			name="Episódios semanais" 
 			amount="3.000" 
-			description="Garante a produção de dois episódios por mês!"
+			description="Atingindo, teremos Reinaldo Jaqueline toda semana!"
 		/>
 
 		<CrowdfundingGoal 
-			name="Programa semanal" 
-			amount="5.500" 
-			description="Garante a frequência semanal do Rabisco Falado!"
+			name="Canal no YouTube" 
+			amount="7.000" 
+			description="Já imaginou ver esses três belos homens em vídeo todos brincalhãozinho? A ideia é essa! Atingindo, iremos fazer um canal no YouTube e os episódios sairão também em vídeo."
 		/>
 
 		<p>
@@ -61,15 +55,29 @@ import CrowdfundingGoal from './CrowdfundingGoal.astro';
 			</div>
 		</p>
 		
-		<h3>Conheça as recompensas individuais!</h3>
+		<h3>Recompensas!</h3>
 
-		<p><br/></p>
+		<br/>
 	
 		<CrowdfundingGoal 
-			name="Nome nos créditos" 
+			name="Nível 1 - Episódios exclusivos e nome no mural" 
 			isReward="true" 
 			amount="10" 
-			description="Seu nome aparecerá nos créditos dos programas durante os meses em que você colaborar!" 
+			description="Os apoiadores de nível 1 receberão episódios exclusivos do Reinaldo Jaqueline através do app do APOIA.se! Toda semana você vai ter um episódio do programa no quadro BANHEIRA DO REINALDO JAQUELINE onde falaremos atrocidades relacionadas ao tema do último episódio lançado dentro de uma banheira juntinho com vocês. Além disso, você terá seu nome no nosso mural de apoiadores e nosso eterno obrigado! Imagina todos os dias a gente pensando no seu nome e agradecendo mentalmente? Incrível, né? Eu juro que isso vai acontecer." 
+		/>
+		
+		<CrowdfundingGoal 
+			name="Nível 2 - Grupo de apoiadores no Telegram" 
+			isReward="true" 
+			amount="25" 
+			description="Além de todas as incríveis recompensas anteriores, você também estará num grupo no Telegram junto com a gente. Sendo bem honesto, fico um pouco preocupado. Mas a gente precisa manter o podcast no ar." 
+		/>
+		
+		<CrowdfundingGoal 
+			name="Nível 3 - Participar do quadro O POVO FALA + Acompanhar gravações ao vivo!" 
+			isReward="true" 
+			amount="50" 
+			description="Essa daqui é sacanagem. O jurídico deixou mesmo isso passar? Além de todas as recompensas anteriores, você pode acompanhar a nossa gravação ao vivo sem cortes é o que você ganha ao nos apoiar com 50 reais. Além disso, você também participa do aclamado quadro O POVO FALA, onde um de nós será o correspondente local e vai te entrevistar ao vivo no nosso auditório! (na verdade você manda um áudio pra gente e a gente insere no programa)." 
 		/>
 
 		<p>
