@@ -252,7 +252,7 @@ footer {
 .podcasts {
 	display: grid;
 	gap: 8px;
-	grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+	grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
 }
 
 .podcast {
